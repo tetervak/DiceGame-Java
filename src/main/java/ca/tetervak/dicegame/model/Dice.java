@@ -6,6 +6,13 @@ public class Dice {
 
     private int value = INIT_VALUE;
 
+    public Dice() {
+    }
+
+    public Dice(int value) {
+        setValue(value);
+    }
+
     public int getValue() {
         return value;
     }
