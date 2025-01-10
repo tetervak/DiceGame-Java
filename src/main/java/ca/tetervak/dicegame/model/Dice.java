@@ -1,16 +1,30 @@
 package ca.tetervak.dicegame.model;
 
-public class Dice {
+import java.util.Random;
+
+public class Dice implements Rollable {
 
     public static final int INIT_VALUE = 1;
 
     private int value = INIT_VALUE;
+    private final Random random;
 
     public Dice() {
+        random = new Random();
     }
 
     public Dice(int value) {
+        this();
         setValue(value);
+    }
+
+    public Dice(int value, Random random) {
+        this.value = value;
+        this.random = random;
+    }
+
+    public Dice(Random random) {
+        this.random = random;
     }
 
     public int getValue() {
@@ -24,8 +38,9 @@ public class Dice {
         this.value = value;
     }
 
+    @Override
     public void roll(){
-        value = (int)(Math.random() * 6 + 1);
+        value = random.nextInt(1,7);
     }
 
 }
