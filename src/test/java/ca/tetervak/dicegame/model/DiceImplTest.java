@@ -9,14 +9,14 @@ import java.util.Random;
 import static java.lang.System.out;
 import static org.junit.jupiter.api.Assertions.*;
 
-class DiceTest {
+class DiceImplTest {
 
-    Dice dice;
+    DiceImpl dice;
 
     @BeforeEach
     void setUp() {
         out.println("Starting test");
-        dice = new Dice(new Random(2));
+        dice = new DiceImpl(new Random(2));
     }
 
     @AfterEach

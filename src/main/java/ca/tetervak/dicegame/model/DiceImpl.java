@@ -2,28 +2,28 @@ package ca.tetervak.dicegame.model;
 
 import java.util.Random;
 
-public class Dice implements Rollable {
+public class DiceImpl implements Rollable {
 
     public static final int INIT_VALUE = 1;
 
     private int value = INIT_VALUE;
     private final Random random;
 
-    public Dice() {
+    public DiceImpl() {
         random = new Random();
     }
 
-    public Dice(int value) {
+    public DiceImpl(int value) {
         this();
         setValue(value);
     }
 
-    public Dice(int value, Random random) {
+    public DiceImpl(int value, Random random) {
         this.value = value;
         this.random = random;
     }
 
-    public Dice(Random random) {
+    public DiceImpl(Random random) {
         this.random = random;
     }
 
