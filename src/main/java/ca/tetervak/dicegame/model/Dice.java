@@ -27,6 +27,7 @@ public class Dice implements Rollable {
         this.random = random;
     }
 
+    @Override
     public int getValue() {
         return value;
     }
