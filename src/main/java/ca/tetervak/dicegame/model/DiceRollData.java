@@ -1,40 +1,11 @@
 package ca.tetervak.dicegame.model;
 
-import java.util.Collections;
 import java.util.List;
 
-public class DiceRollData {
+public interface DiceRollData {
+    List<Integer> getValues();
 
-    private final List<Integer> values;
+    int getNumberOfDice();
 
-    public List<Integer> getValues() {
-        return values;
-    }
-
-    public int getNumberOfDice(){
-        return values.size();
-    }
-
-    private final int total;
-
-    public int getTotal() {
-        return total;
-    }
-
-    public DiceRollData(List<Integer> values) {
-        this.values = Collections.unmodifiableList(values);
-        int sum = 0;
-        for(int value: values){
-            sum += value;
-        }
-        total = sum;
-    }
-
-    @Override
-    public String toString(){
-        return String.format(
-                "RollData{values = %s, total = %d, numberOfDice = %d}",
-                values, total, getNumberOfDice()
-        );
-    }
+    int getTotal();
 }
