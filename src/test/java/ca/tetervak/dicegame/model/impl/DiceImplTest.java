@@ -1,6 +1,5 @@
-package ca.tetervak.dicegame.model;
+package ca.tetervak.dicegame.model.impl;
 
-import ca.tetervak.dicegame.model.impl.DiceImpl;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
