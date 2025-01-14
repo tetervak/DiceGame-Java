@@ -1,6 +1,10 @@
 package ca.tetervak.dicegame;
 
+import ca.tetervak.dicegame.model.DiceRollData;
 import ca.tetervak.dicegame.model.impl.DiceImpl;
+import ca.tetervak.dicegame.model.impl.DiceRollDataImpl;
+
+import java.util.List;
 
 import static java.lang.System.out;
 
@@ -14,6 +18,11 @@ public class Main {
             int rand = dice.getValue();
             out.printf("random value %d = %d\n", i, rand);
         }
+
+        out.println("dice = " + dice);
+
+        DiceRollData rollData = new DiceRollDataImpl(List.of(1,2,3));
+        out.println("rollData = " + rollData);
 
     }
 }

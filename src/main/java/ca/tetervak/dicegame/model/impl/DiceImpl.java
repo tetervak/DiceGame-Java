@@ -46,4 +46,9 @@ public class DiceImpl implements Dice {
         value = random.nextInt(1,7);
     }
 
+    @Override
+    public String toString() {
+        return "DiceImpl{" +
+                "value=" + value + '}';
+    }
 }
