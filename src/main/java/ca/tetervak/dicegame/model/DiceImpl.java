@@ -2,7 +2,7 @@ package ca.tetervak.dicegame.model;
 
 import java.util.Random;
 
-public class DiceImpl implements Rollable {
+public class DiceImpl implements Dice {
 
     public static final int INIT_VALUE = 1;
 

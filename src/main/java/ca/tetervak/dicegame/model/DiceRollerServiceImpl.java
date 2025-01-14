@@ -5,10 +5,10 @@ import java.util.List;
 
 public class DiceRollerServiceImpl implements DiceRollerService {
 
-    private final Rollable rollable;
+    private final Dice dice;
 
-    public DiceRollerServiceImpl(Rollable rollable) {
-        this.rollable = rollable;
+    public DiceRollerServiceImpl(Dice dice) {
+        this.dice = dice;
     }
 
     @Override
@@ -20,8 +20,8 @@ public class DiceRollerServiceImpl implements DiceRollerService {
 
         List<Integer> list = new ArrayList<>(numberOfDice);
         for(int i = 0; i < numberOfDice; i++){
-            rollable.roll();
-            list.add(rollable.getValue());
+            dice.roll();
+            list.add(dice.getValue());
         }
 
         return new DiceRollDataImpl(list);
