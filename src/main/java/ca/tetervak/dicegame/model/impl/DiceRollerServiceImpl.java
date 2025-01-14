@@ -1,4 +1,8 @@
-package ca.tetervak.dicegame.model;
+package ca.tetervak.dicegame.model.impl;
+
+import ca.tetervak.dicegame.model.Dice;
+import ca.tetervak.dicegame.model.DiceRollData;
+import ca.tetervak.dicegame.model.DiceRollerService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,6 @@
-package ca.tetervak.dicegame.model;
+package ca.tetervak.dicegame.model.impl;
+
+import ca.tetervak.dicegame.model.Dice;
 
 import java.util.Random;
 

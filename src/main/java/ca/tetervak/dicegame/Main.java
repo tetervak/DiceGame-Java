@@ -1,6 +1,6 @@
 package ca.tetervak.dicegame;
 
-import ca.tetervak.dicegame.model.DiceImpl;
+import ca.tetervak.dicegame.model.impl.DiceImpl;
 
 import static java.lang.System.out;
 
